@@ -76,14 +76,20 @@ class AdjacencyList(object):
                     self._srcToAll[adjNode][0] = minNode
                     self._srcToAll[adjNode][1] = new_dist
 
-    def showPath(self, src, dst):
+    def multipath(self, src):
+        pass
+
+    def showPath(self, src, dst, mode):
         self._path = []
 
         if self._path and self._srcToAll[src][1] == 0:
             path = self._path
             return path
 
-        self.dijkstra(src)
+        if mode == 'multipath':
+            self.multipath(src)
+        else:
+            self.dijkstra(src)
         mid = dst
         while self._srcToAll[mid][1] != 0:
             self._path.append(mid)
