@@ -1,0 +1,610 @@
+{
+    "device1": {
+        "device_id": 1,
+        "device_name": "rte1",
+        "device_ip": "10.0.4.1",
+        "device_type": "router",
+        "device_level": "4",
+        "device_createtime": "2018-12-03T13:07:14.844Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.1",
+            "interface2": "10.0.3.2",
+            "interface3": "10.0.3.3",
+            "interface4": "10.0.3.4",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device2": {
+        "device_id": 2,
+        "device_name": "swc1",
+        "device_ip": "10.0.3.1",
+        "device_type": "switch",
+        "device_level": "3",
+        "device_createtime": "2018-12-03T13:07:14.917Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.4.1",
+            "interface2": "10.0.2.1",
+            "interface3": "10.0.2.2",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device3": {
+        "device_id": 3,
+        "device_name": "swc2",
+        "device_ip": "10.0.3.2",
+        "device_type": "switch",
+        "device_level": "3",
+        "device_createtime": "2018-12-03T13:07:14.994Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.4.1",
+            "interface2": "10.0.2.3",
+            "interface3": "10.0.2.4",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device4": {
+        "device_id": 4,
+        "device_name": "swc3",
+        "device_ip": "10.0.3.3",
+        "device_type": "switch",
+        "device_level": "3",
+        "device_createtime": "2018-12-03T13:07:15.072Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.4.1",
+            "interface2": "10.0.2.3",
+            "interface3": "10.0.2.4",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device5": {
+        "device_id": 5,
+        "device_name": "swc4",
+        "device_ip": "10.0.3.4",
+        "device_type": "switch",
+        "device_level": "3",
+        "device_createtime": "2018-12-03T13:07:15.178Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.4.1",
+            "interface2": "10.0.2.5",
+            "interface3": "10.0.2.6",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device6": {
+        "device_id": 6,
+        "device_name": "hst1",
+        "device_ip": "10.0.2.1",
+        "device_type": "host",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.266Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.1",
+            "interface2": "10.0.1.1",
+            "interface3": "10.0.1.2",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device7": {
+        "device_id": 7,
+        "device_name": "srv1",
+        "device_ip": "10.0.2.2",
+        "device_type": "server",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.335Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.1",
+            "interface2": "10.0.1.1",
+            "interface3": "10.0.1.2",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device8": {
+        "device_id": 8,
+        "device_name": "fw1",
+        "device_ip": "",
+        "device_type": "firewall",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.473Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.1",
+            "interface2": "10.0.2.1",
+            "interface3": "10.0.2.2",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device9": {
+        "device_id": 9,
+        "device_name": "hst2",
+        "device_ip": "10.0.2.3",
+        "device_type": "host",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.533Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.2",
+            "interface2": "10.0.3.3",
+            "interface3": "10.0.1.3",
+            "interface4": "10.0.1.4",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device10": {
+        "device_id": 10,
+        "device_name": "srv2",
+        "device_ip": "10.0.2.4",
+        "device_type": "server",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.609Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.2",
+            "interface2": "10.0.3.3",
+            "interface3": "10.0.1.3",
+            "interface4": "10.0.1.4",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device11": {
+        "device_id": 11,
+        "device_name": "fw2",
+        "device_ip": "",
+        "device_type": "firewall",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.687Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.2",
+            "interface2": "10.0.3.3",
+            "interface3": "10.0.2.3",
+            "interface4": "10.0.2.4",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device12": {
+        "device_id": 12,
+        "device_name": "hst3",
+        "device_ip": "10.0.2.5",
+        "device_type": "host",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.796Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.4",
+            "interface2": "10.0.1.5",
+            "interface3": "10.0.1.6",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device13": {
+        "device_id": 13,
+        "device_name": "srv3",
+        "device_ip": "10.0.2.6",
+        "device_type": "server",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.874Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.4",
+            "interface2": "10.0.1.5",
+            "interface3": "10.0.1.6",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device14": {
+        "device_id": 14,
+        "device_name": "fw3",
+        "device_ip": "",
+        "device_type": "firewall",
+        "device_level": "2",
+        "device_createtime": "2018-12-03T13:07:15.942Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.3.4",
+            "interface2": "10.0.2.5",
+            "interface3": "10.0.2.6",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device15": {
+        "device_id": 15,
+        "device_name": "plc1",
+        "device_ip": "10.0.1.1",
+        "device_type": "PLC",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.004Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.1",
+            "interface2": "10.0.2.2",
+            "interface3": "10.0.0.1",
+            "interface4": "10.0.0.2",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device16": {
+        "device_id": 16,
+        "device_name": "rtu1",
+        "device_ip": "10.0.1.2",
+        "device_type": "RTU",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.067Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.1",
+            "interface2": "10.0.2.2",
+            "interface3": "10.0.0.3",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device17": {
+        "device_id": 17,
+        "device_name": "fw4",
+        "device_ip": "",
+        "device_type": "firewall",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.174Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.1",
+            "interface2": "10.0.2.2",
+            "interface3": "10.0.1.1",
+            "interface4": "10.0.1.2",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device18": {
+        "device_id": 18,
+        "device_name": "plc2",
+        "device_ip": "10.0.1.3",
+        "device_type": "PLC",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.241Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.3",
+            "interface2": "10.0.2.4",
+            "interface3": "10.0.0.4",
+            "interface4": "10.0.0.5",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device19": {
+        "device_id": 19,
+        "device_name": "rtu2",
+        "device_ip": "10.0.1.4",
+        "device_type": "RTU",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.302Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.3",
+            "interface2": "10.0.2.4",
+            "interface3": "10.0.0.6",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device20": {
+        "device_id": 20,
+        "device_name": "hb1",
+        "device_ip": "",
+        "device_type": "hub",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.364Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.3",
+            "interface2": "10.0.2.4",
+            "interface3": "10.0.1.3",
+            "interface4": "10.0.1.4",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device21": {
+        "device_id": 21,
+        "device_name": "plc3",
+        "device_ip": "10.0.1.5",
+        "device_type": "PLC",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.440Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.5",
+            "interface2": "10.0.2.6",
+            "interface3": "10.0.0.7",
+            "interface4": "10.0.0.8",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device22": {
+        "device_id": 22,
+        "device_name": "rtu3",
+        "device_ip": "10.0.1.6",
+        "device_type": "RTU",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.506Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.5",
+            "interface2": "10.0.2.6",
+            "interface3": "10.0.0.9",
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device23": {
+        "device_id": 23,
+        "device_name": "hb2",
+        "device_ip": "",
+        "device_type": "hub",
+        "device_level": "1",
+        "device_createtime": "2018-12-03T13:07:16.573Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.2.5",
+            "interface2": "10.0.2.6",
+            "interface3": "10.0.1.5",
+            "interface4": "10.0.1.6",
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device24": {
+        "device_id": 24,
+        "device_name": "mch1",
+        "device_ip": "10.0.0.1",
+        "device_type": "machine",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:16.640Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.1",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device25": {
+        "device_id": 25,
+        "device_name": "met1",
+        "device_ip": "10.0.0.2",
+        "device_type": "meter",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:16.706Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.1",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device26": {
+        "device_id": 26,
+        "device_name": "mch2",
+        "device_ip": "10.0.0.3",
+        "device_type": "machine",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:16.775Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.2",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device27": {
+        "device_id": 27,
+        "device_name": "mch3",
+        "device_ip": "10.0.0.4",
+        "device_type": "machine",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:16.839Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.3",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device28": {
+        "device_id": 28,
+        "device_name": "met2",
+        "device_ip": "10.0.0.5",
+        "device_type": "meter",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:16.905Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.3",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device29": {
+        "device_id": 29,
+        "device_name": "cam1",
+        "device_ip": "10.0.0.6",
+        "device_type": "camera",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:16.971Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.4",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device30": {
+        "device_id": 30,
+        "device_name": "mch4",
+        "device_ip": "10.0.0.7",
+        "device_type": "machine",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:17.053Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.5",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device31": {
+        "device_id": 31,
+        "device_name": "met3",
+        "device_ip": "10.0.0.8",
+        "device_type": "meter",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:17.121Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.5",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    },
+    "device32": {
+        "device_id": 32,
+        "device_name": "cam2",
+        "device_ip": "10.0.0.9",
+        "device_type": "camera",
+        "device_level": "0",
+        "device_createtime": "2018-12-03T13:07:17.187Z",
+        "device_brand": null,
+        "device_desc": null,
+        "device_conns": {
+            "interface1": "10.0.1.6",
+            "interface2": null,
+            "interface3": null,
+            "interface4": null,
+            "interface5": null,
+            "interface6": null,
+            "interface7": null
+        }
+    }
+}

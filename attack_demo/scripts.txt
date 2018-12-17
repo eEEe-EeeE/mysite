@@ -1,0 +1,15 @@
+1	FTP Voyager 16.2.0 - Denial of Service (PoC)	Dos	Windows_x86	Abdullah Alsie	2018-10-03	FTP Voyager 16.2.0	https://www.exploit-db.com/download/45527
+2	Linux - Kernel Pointer Leak via BPF	Dos	Linux	Google Security Research	2018-10-08	Linux Kernel	https://www.exploit-db.com/download/45557
+3	net-snmp 5.7.3 - Authenticated Denial of Service (PoC)	DoS	Linux	Magnus Klaaborg Stubman	2018-10-08	net-snmp 5.7.3	https://www.exploit-db.com/download/45547
+4	net-snmp 5.7.3 - Unauthenticated Denial of Service (PoC)	DoS	Linux	Magnus Klaaborg Stubman	2018-10-08	net-snmp 5.7.3	https://www.exploit-db.com/download/45544
+5	Microsoft Edge Chakra JIT - Type Confusion	DoS	Windows	Google Security Research	2018-10-09	Microsoft Edge Chakra JIT	https://www.exploit-db.com/download/45572
+6	Microsoft Edge Chakra JIT - 'BailOutOnInvalidatedArrayHeadSegment' Check Bypass	DoS	Windows	Google Security Research	2018-10-09	Microsoft Edge Chakra JIT	https://www.exploit-db.com/download/45571
+7	Apple iOS Kernel - Use-After-Free due to bad Error Handling in Personas	DoS	iOS	Google Security Research	2018-10-22	Apple iOS Kernel	https://www.exploit-db.com/download/45652
+8	Apple iOS/macOS - Kernel Memory Corruption due to Integer Overflow in IOHIDResourceQueue::enqueueReport	Integer Overflow	Multiple	Google Security Research	2018-10-22	Apple iOS/macOS	https://www.exploit-db.com/download/45651
+9	Audacity 2.3 - Denial of Service (PoC)	DoS	Windows	Kagan Chapar	2018-10-22	Audacity 2.3	https://www.exploit-db.com/download/45644
+10	Apple iOS/macOS - Sandbox Escape due to Trusted Length Field in Shared Memory used by HID Event Subsystem	DoS	Multiple	Google Security Research	2018-10-22	Apple iOS/macOS	https://github.com/offensive-security/exploitdb-bin-sploits/raw/master/bin-sploits/45650.zip
+11	libtiff 4.0.9 - Decodes Arbitrarily Sized JBIG into a Target Buffer	heap Overflow	linux	Google Security Research	2018-10-25	libtiff-4.0.9	https://www.exploit-db.com/download/45694
+12	systemd - 'chown_one()' Dereference Symlinks	Dos	Ubuntu	Google Security Research	2018-10-29	Linux OS	https://www.exploit-db.com/download/45715
+13	systemd - 'reexec' State Injection	Dos	Linux	Google Security Research	2018-10-29	Linux OS	https://www.exploit-db.com/download/45714
+14	AlienIP 2.41 - Denial of Service (PoC)	Dos	Windows_x86-64	Arturo de la Cruz Tellez	2018-10-29	AlienIP 2.41	https://www.exploit-db.com/download/45708
+15	Navicat 12.0.29 - 'SSH' Denial of Service (PoC)	Dos	Windows_x86-64	Rafael Alfaro	2018-10-29	Navicat 12.0.29	https://www.exploit-db.com/download/45705

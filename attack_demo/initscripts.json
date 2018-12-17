@@ -1,0 +1,137 @@
+{
+    "script1": {
+        "title": "FTP Voyager 16.2.0 - Denial of Service (PoC)",
+        "script_type": "Dos",
+        "platform": "Windows_x86",
+        "author": "Abdullah Alsie",
+        "published": "2018-10-03",
+        "vuln_sorftware": "FTP Voyager 16.2.0",
+        "download": "https://www.exploit-db.com/download/45527"
+    },
+    "script2": {
+        "title": "Linux - Kernel Pointer Leak via BPF",
+        "script_type": "Dos",
+        "platform": "Linux",
+        "author": "Google Security Research",
+        "published": "2018-10-08",
+        "vuln_sorftware": "Linux Kernel",
+        "download": "https://www.exploit-db.com/download/45557"
+    },
+    "script3": {
+        "title": "net-snmp 5.7.3 - Authenticated Denial of Service (PoC)",
+        "script_type": "Dos",
+        "platform": "Linux",
+        "author": "Magnus Klaaborg Stubman",
+        "published": "2018-10-08",
+        "vuln_sorftware": "net-snmp 5.7.3",
+        "download": "https://www.exploit-db.com/download/45547"
+    },
+    "script4": {
+        "title": "net-snmp 5.7.3 - Unauthenticated Denial of Service (PoC)",
+        "script_type": "Dos",
+        "platform": "Linux",
+        "author": "Magnus Klaaborg Stubman",
+        "published": "2018-10-08",
+        "vuln_sorftware": "net-snmp 5.7.3",
+        "download": "https://www.exploit-db.com/download/45544"
+    },
+    "script5": {
+        "title": "Microsoft Edge Chakra JIT - Type Confusion",
+        "script_type": "Dos",
+        "platform": "Windows",
+        "author": "Google Security Research",
+        "published": "2018-10-09",
+        "vuln_sorftware": "Microsoft Edge Chakra JIT",
+        "download": "https://www.exploit-db.com/download/45572"
+    },
+    "script6": {
+        "title": "Microsoft Edge Chakra JIT - 'BailOutOnInvalidatedArrayHeadSegment' Check Bypass",
+        "script_type": "Dos",
+        "platform": "Windows",
+        "author": "Google Security Research",
+        "published": "2018-10-09",
+        "vuln_sorftware": "Microsoft Edge Chakra JIT",
+        "download": "https://www.exploit-db.com/download/45571"
+    },
+    "script7": {
+        "title": "Apple iOS Kernel - Use-After-Free due to bad Error Handling in Personas",
+        "script_type": "DoS",
+        "platform": "iOS",
+        "author": "Google Security Research",
+        "published": "2018-10-22",
+        "vuln_sorftware": "Apple iOS Kernel",
+        "download": "https://www.exploit-db.com/download/45652"
+    },
+    "script8": {
+        "title": "Apple iOS/macOS - Kernel Memory Corruption due to Integer Overflow in IOHIDResourceQueue::enqueueReport",
+        "script_type": "Integer Overflow",
+        "platform": "Multiple",
+        "author": "Google Security Research",
+        "published": "2018-10-22",
+        "vuln_sorftware": "Apple iOS Kernel",
+        "download": "https://www.exploit-db.com/download/45651"
+    },
+    "script9": {
+        "title": "Audacity 2.3 - Denial of Service (PoC)",
+        "script_type": "DoS",
+        "platform": "Windows",
+        "author": "Kagan Chapar",
+        "published": "2018-10-22",
+        "vuln_sorftware": "Audacity 2.3",
+        "download": "https://www.exploit-db.com/download/45644"
+    },
+    "script10": {
+        "title": "Apple iOS/macOS - Sandbox Escape due to Trusted Length Field in Shared Memory used by HID Event Subsystem",
+        "script_type": "DoS",
+        "platform": "Multiple",
+        "author": "Google Security Research",
+        "published": "2018-10-22",
+        "vuln_sorftware": "Apple iOS/macOS",
+        "download": "https://github.com/offensive-security/exploitdb-bin-sploits/raw/master/bin-sploits/45650.zip"
+    },
+    "script11": {
+        "title": "libtiff 4.0.9 - Decodes Arbitrarily Sized JBIG into a Target Buffer",
+        "script_type": "Heap Overflow",
+        "platform": "linux",
+        "author": "Google Security Research",
+        "published": "2018-10-25",
+        "vuln_sorftware": "libtiff-4.0.9",
+        "download": "https://www.exploit-db.com/download/45694"
+    },
+    "script12": {
+        "title": "systemd - 'chown_one()' Dereference Symlinks",
+        "script_type": "Dos",
+        "platform": "Ubuntu",
+        "author": "Google Security Research",
+        "published": "2018-10-29",
+        "vuln_sorftware": "Linux OS",
+        "download": "https://www.exploit-db.com/download/45715"
+    },
+    "script13": {
+        "title": "systemd - 'reexec' State Injection",
+        "script_type": "Dos",
+        "platform": "Linux",
+        "author": "Google Security Research",
+        "published": "2018-10-29",
+        "vuln_sorftware": "Linux OS",
+        "download": "https://www.exploit-db.com/download/45714"
+    },
+    "script14": {
+        "title": "AlienIP 2.41 - Denial of Service (PoC)",
+        "script_type": "Dos",
+        "platform": "Windows_x86-64",
+        "author": "Arturo de la Cruz Tellez",
+        "published": "2018-10-29",
+        "vuln_sorftware": "AlienIP 2.41",
+        "download": "https://www.exploit-db.com/download/45708"
+    },
+    "script15": {
+        "title": "Navicat 12.0.29 - 'SSH' Denial of Service (PoC)",
+        "script_type": "Dos",
+        "platform": "Windows_x86-64",
+        "author": "Rafael Alfaro",
+        "published": "2018-10-29",
+        "vuln_sorftware": "Navicat 12.0.29",
+        "download": "https://www.exploit-db.com/download/45705"
+    }
+}

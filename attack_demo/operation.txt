@@ -1,0 +1,20 @@
+增:
+Question.objects.create()
+
+obj = Question(name='tom')
+obj.save()
+
+删:
+Question.objects.filter(name='tom').delete()
+
+改:
+Question.objects.filter(name='tom').update(age=12)
+
+obj = Question.objects.get(name='tom')
+obj.age = 12
+obj.save()
+
+查:
+L = Question.objects.filter(name='tom')
+obj = Question.objects.get(name='tom')
+
