@@ -69,13 +69,30 @@ def addConnection(request):
 @require_http_methods(['POST'])
 def dropDevice(request):
     name = request.POST['device_name']
-    Device.objects.get(device_name=name).delete()
+    dev = Device.objects.filter(device_name=name)
+    if not dev.exists():
+        results = {
+            'msg': '设备不存在'
+        }
+    else:
+        dev.delete()
+        results = {
+            'msg': '删除设备成功',
+            'device_name': name
+        }
+    if not Device.objects.all().exists():
+        reset.reset_auto_increment('attack_demo_device')
+    return JsonResponse(results)
+
+
+@require_http_methods(['GET'])
+def dropAllDevice(request):
+    Device.objects.all().delete()
     results = {
-        'msg': '删除设备成功',
-        'device_name': name
+        'msg': '删除所有设备成功'
     }
     if not Device.objects.all().exists():
-        reset.reset_auto_increment('attack_demo_Device')
+        reset.reset_auto_increment('attack_demo_device')
     return JsonResponse(results)
 
 
@@ -275,7 +292,7 @@ def demoInit(request):
     # results = read_dev_and_topo()
     Device.objects.all().delete()
     DeviceTopology.objects.all().delete()
-    reset.reset_auto_increment('attack_demo_Device')
+    reset.reset_auto_increment('attack_demo_device')
     f = open(DIR + '/initdata.json', encoding='utf-8')
     results = json.loads(f.read())
     info = copy.deepcopy(results)
@@ -293,8 +310,8 @@ def demoInit(request):
 def toolsInit(request):
     AttackTool.objects.all().delete()
     AttackArg.objects.all().delete()
-    reset.reset_auto_increment('attack_demo_AttackTool')
-    reset.reset_auto_increment('attack_demo_AttackArg')
+    reset.reset_auto_increment('attack_demo_attacktool')
+    reset.reset_auto_increment('attack_demo_attackarg')
     f = open(DIR + '/inittools.json', encoding='utf-8')
     results = json.loads(f.read())
     info = copy.deepcopy(results)
@@ -312,7 +329,7 @@ def toolsInit(request):
 @require_http_methods(['GET'])
 def scriptsInit(request):
     AttackScript.objects.all().delete()
-    reset.reset_auto_increment('attack_demo_AttackScript')
+    reset.reset_auto_increment('attack_demo_attackscript')
     f = open(DIR + '/initscripts.json', encoding='utf-8')
     results = json.loads(f.read())
     info = copy.deepcopy(results)
@@ -345,7 +362,7 @@ def deleteScript(request):
         'detail': info
     }
     if not AttackScript.objects.all().exists():
-        reset.reset_auto_increment('attack_demo_AttackScript')
+        reset.reset_auto_increment('attack_demo_attackscript')
     return JsonResponse(results)
 
 

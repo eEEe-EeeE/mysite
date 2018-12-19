@@ -7,6 +7,7 @@ urlpatterns = [
     url(r'^local/device/add/$', views.addDevice),
     url(r'^local/device/connection/add/$', views.addConnection),
     url(r'^local/device/delete/$', views.dropDevice),
+    url(r'^local/device/all/delete/$', views.dropAllDevice),
     url(r'^local/device/connections/delete/$', views.dropConnection),
     url(r'^local/device/update/$', views.updateDevice),
     url(r'^local/device/connections/update/$', views.updateConnection),
