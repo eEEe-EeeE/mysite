@@ -4,7 +4,7 @@
         "attack_type": "NetworkMonitoring",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination",
             "ports",
@@ -17,7 +17,7 @@
         "attack_type": "NetworkScanning",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -27,7 +27,7 @@
         "attack_type": "ICPMredirect",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -37,7 +37,7 @@
         "attack_type": "RouteSpoofing",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -47,7 +47,7 @@
         "attack_type": "ARPspoofing",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -57,7 +57,7 @@
         "attack_type": "PortScanning",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -67,7 +67,7 @@
         "attack_type": "SYNflooding",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -77,7 +77,7 @@
         "attack_type": "TCPspoofing",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -87,7 +87,7 @@
         "attack_type": "OutOfBuffer",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -97,7 +97,7 @@
         "attack_type": "Virus&TrojanHorse",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -107,7 +107,7 @@
         "attack_type": "SQLinjection",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]
@@ -117,7 +117,7 @@
         "attack_type": "DDoS",
         "attack_level": "1",
         "attack_desc": null,
-        "attack_args": [
+        "attack_arg": [
             "source",
             "destination"
         ]

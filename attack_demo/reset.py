@@ -4,7 +4,7 @@ import os, json
 DIR = os.path.dirname(__file__)
 
 def reset_auto_increment(table_name):
-    f = open(DIR + '\\connector_init.json', encoding='utf-8')
+    f = open(DIR + '/connector_init.json', encoding='utf-8')
     args = json.loads(f.read())
     cnx = mysql.connector.connect(**args)
     cursor = cnx.cursor()

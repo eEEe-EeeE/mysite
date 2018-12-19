@@ -199,7 +199,7 @@ def attackDemo(request):
     gra = utils.read_demotopo()
     aj = graph.AdjacencyList()
     aj.addGraph(**gra)
-    path = aj.showPath(src, dst)
+    path = aj.showPath(src, dst, 'dijkstra')
 
     info = {}
     info['source'] = src
@@ -232,7 +232,7 @@ def getAttackArg(request):
             args.append(a.attack_arg)
         results['tool' + str(tid)] = {
             'attack_type': name,
-            'attack_args': args
+            'attack_arg': args
         }
         args = []
     return JsonResponse(results)
@@ -276,12 +276,12 @@ def demoInit(request):
     Device.objects.all().delete()
     DeviceTopology.objects.all().delete()
     reset.reset_auto_increment('attack_demo_Device')
-    f = open(DIR + '\\initdata.json', encoding='utf-8')
+    f = open(DIR + '/initdata.json', encoding='utf-8')
     results = json.loads(f.read())
     info = copy.deepcopy(results)
     conns = {}
     for v in info.values():
-        v.pop('device_id')
+        # v.pop('device_id')
         v.pop('device_createtime')
         conns = v.pop('device_conns')
         obj = Device.objects.create(**v)
@@ -295,15 +295,15 @@ def toolsInit(request):
     AttackArg.objects.all().delete()
     reset.reset_auto_increment('attack_demo_AttackTool')
     reset.reset_auto_increment('attack_demo_AttackArg')
-    f = open(DIR + '\\inittools.json', encoding='utf-8')
+    f = open(DIR + '/inittools.json', encoding='utf-8')
     results = json.loads(f.read())
     info = copy.deepcopy(results)
     args = []
     for tool in info.values():
-        args = tool.pop('attack_args')
+        args = tool.pop('attack_arg')
         t = AttackTool.objects.create(**tool)
         for a in args:
-            t.AttackArg_set.create(attack_arg=a)
+            t.attackarg_set.create(attack_arg=a)
         args = []
     return JsonResponse(results)
 
@@ -313,7 +313,7 @@ def toolsInit(request):
 def scriptsInit(request):
     AttackScript.objects.all().delete()
     reset.reset_auto_increment('attack_demo_AttackScript')
-    f = open(DIR + '\\initscripts.json', encoding='utf-8')
+    f = open(DIR + '/initscripts.json', encoding='utf-8')
     results = json.loads(f.read())
     info = copy.deepcopy(results)
     for script in info.values():

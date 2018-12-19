@@ -34,7 +34,7 @@ def read_tools_and_args():
         tool = t
         for a in AttackArg.objects.filter(attack_type=t['attack_type']):
             args.append(a.attack_arg)
-        tool['attack_args'] = args
+        tool['attack_arg'] = args
         args = []
         results['tool' + t['attack_id']] = tool
     return results

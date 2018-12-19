@@ -6,7 +6,7 @@ class PriorityQueue:
         self._index = 0
 
     def push(self, item, priority):
-        heapq.heappush(self._queue, (priority, self._index, item)) # priority == distance
+        heapq.heappush(self._queue, (priority, self._index, item)) # priority == distance, small number is good
         self._index += 1
 
     def pop(self):
@@ -21,6 +21,7 @@ class PriorityQueue:
 class AdjacencyList(object):
 
     def __init__(self):
+        # node's name is device_name.
         self._adjList = {}
 
     def addGraph(self, **graph):
@@ -66,20 +67,46 @@ class AdjacencyList(object):
         Q.push(src, 0)
 
         while not Q.isEmpty():
-            minNode = Q.pop()
-            curDist = self._srcToAll[minNode][1]
-            for adjNode in self._adjList[minNode]:
+            mineNode = Q.pop()
+            curDist = self._srcToAll[mineNode][1]
+            for adjNode in self._adjList[mineNode]:
                 new_dist = curDist + 1
                 if new_dist < self._srcToAll[adjNode][1]:
                     if self._srcToAll[adjNode][1] == inf:
                         Q.push(adjNode, new_dist)
-                    self._srcToAll[adjNode][0] = minNode
+                    self._srcToAll[adjNode][0] = mineNode
                     self._srcToAll[adjNode][1] = new_dist
 
     def multipath(self, src):
-        pass
+        self._srcToAll = {}
 
-    def showPath(self, src, dst, mode):
+        inf = float('inf')
+        allNodes = self.printAllNode()
+
+        # initialize information(previous hop and distance) of source node to other nodes.
+        # previous hop is from source node to this node's previous hop.
+        # distance is from source node to this node's distance
+        for node in allNodes:
+            self._srcToAll[node] = [node, inf] # from src to node, node: (the previous hop, distance)
+        self._srcToAll[src] = [src, 0]
+
+        # push source node to initialize queue and mine its adjnodes.
+        Q = PriorityQueue()
+        Q.push(src, 0)
+
+        while not Q.isEmpty():
+            mineNode = Q.pop()
+            curDist = self._srcToAll[mineNode][1]
+            for adjNode in self._adjList[mineNode]:
+                new_dist = curDist + 1
+                if new_dist < self._srcToAll[adjNode][1]:
+                    # if it is new, then push it
+                    if self._srcToAll[adjNode][1] == inf:
+                        Q.push(adjNode, new_dist)
+                    self._srcToAll[adjNode][0] = mineNode
+                    self._srcToAll[adjNode][1] = new_dist
+
+    def showPath(self, src, dst, mode='multipath'):
         self._path = []
 
         if self._path and self._srcToAll[src][1] == 0:
@@ -90,14 +117,14 @@ class AdjacencyList(object):
             self.multipath(src)
         else:
             self.dijkstra(src)
-        mid = dst
-        while self._srcToAll[mid][1] != 0:
-            self._path.append(mid)
-            mid = self._srcToAll[mid][0]
-        self._path.append(src)
-        self._path.reverse()
-        path = self._path
-        return path
+            mid = dst
+            while self._srcToAll[mid][1] != 0:
+                self._path.append(mid)
+                mid = self._srcToAll[mid][0]
+            self._path.append(src)
+            self._path.reverse()
+            path = self._path
+            return path
 
 
 
