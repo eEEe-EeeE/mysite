@@ -171,6 +171,8 @@ def getDeviceList(request):
     devlist = Device.objects.all().values()
     results = {}
     for d in devlist:
+        d['device_conns'] = DeviceTopology.objects.filter(device_name=d['device_name']).values()[0]
+        d['device_conns'].pop('device_name_id')
         results['device' + str(d['device_id'])] = d
     return JsonResponse(results)
 
