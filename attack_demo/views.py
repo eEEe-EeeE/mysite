@@ -169,12 +169,12 @@ def updateConnection(request):
 @require_http_methods(['GET'])
 def getDeviceList(request):
     devlist = Device.objects.all().values()
-    results = {}
+    results = []
     for d in devlist:
         d['device_conns'] = DeviceTopology.objects.filter(device_name=d['device_name']).values()[0]
         d['device_conns'].pop('device_name_id')
-        results['device' + str(d['device_id'])] = d
-    return JsonResponse(results)
+        results.append(d)
+    return JsonResponse(results, safe=False)
 
 
 @require_http_methods(['GET'])
@@ -242,28 +242,30 @@ def attackDemo(request):
 @require_http_methods(['GET'])
 def getAttackArg(request):
     tools = AttackTool.objects.all()
-    results = {}
+    results = []
     args = []
     for tool in tools:
         name = tool.attack_type
         tid = tool.attack_id
         for a in AttackArg.objects.filter(attack_type=name):
             args.append(a.attack_arg)
-        results['tool' + str(tid)] = {
-            'attack_type': name,
-            'attack_arg': args
-        }
+        results.append(
+            {
+                'attack_type': name,
+                'attack_arg': args
+            }
+        )
         args = []
-    return JsonResponse(results)
+    return JsonResponse(results, safe=False)
 
 
 @require_http_methods(['GET'])
 def getHistories(request):
     hs = AttackHistory.objects.all().values() # [{}, {}]
-    results = {}
+    results = []
     for h in hs:
-        results['history' + str(h['record_id'])] = h
-    return JsonResponse(results)
+        results.append(h)
+    return JsonResponse(results, safe=False)
 
 @csrf_exempt
 @require_http_methods(['POST'])
@@ -371,7 +373,7 @@ def deleteScript(request):
 @require_http_methods(['GET'])
 def getScripts(request):
     all_sc = AttackScript.objects.all().values() # [{}, {}]
-    results = {}
+    results = []
     for sc in all_sc:
-        results['script' + str(sc['id'])] = sc
-    return JsonResponse(results)
+        results.append(sc)
+    return JsonResponse(results, safe=False)
