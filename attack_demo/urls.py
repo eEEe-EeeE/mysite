@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^local/device/update/$', views.updateDevice),
     url(r'^local/device/connections/update/$', views.updateConnection),
     url(r'^local/device/list/get/$', views.getDeviceList),
+    url(r'^local/device/connection/list/get/$', views.getConnectionList),
     url(r'^local/device/detail/get/$', views.getDeviceDesc),
     url(r'^local/device/connections/get/$', views.getDeviceConnection),
     # 攻击工具部分

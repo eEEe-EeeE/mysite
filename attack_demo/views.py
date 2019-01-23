@@ -171,6 +171,15 @@ def getDeviceList(request):
     devlist = Device.objects.all().values()
     results = []
     for d in devlist:
+        results.append(d)
+    return JsonResponse(results, safe=False)
+
+
+@require_http_methods(['GET'])
+def getConnectionList(request):
+    devconnlist = Device.objects.all().values('device_id', 'device_name')
+    results = []
+    for d in devconnlist:
         d['device_conns'] = DeviceTopology.objects.filter(device_name=d['device_name']).values()[0]
         d['device_conns'].pop('device_name_id')
         results.append(d)
