@@ -3,6 +3,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
+    # 系统漏洞
     url(r'^awareness/vulnerability/add/$', views.addVuln),
     url(r'^awareness/vulnerability/delete/$', views.dropVuln),
     url(r'^awareness/vulnerability/update/$', views.updateVuln),
